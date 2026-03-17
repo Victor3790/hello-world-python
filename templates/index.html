@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    {% for message in get_flashed_messages() %}
-        <p>{{ message }}</p>
-    {% endfor %}
+    <h1>Index Page</h1>
+    <h2>Welcome!</h2>
+    <h3>Select:</h3>
+    <ul>
+        <li><a href="{{ url_for('hello') }}">Hello, World!</a></li>
+    </ul>
 </body>
 </html>
