@@ -11,3 +11,7 @@ def home():
 def hello():
     flash("This is a flash message!")
     return render_template("hello.html")
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
