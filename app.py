@@ -22,8 +22,8 @@ def login_post():
     password = request.form.get("password")
     
     if username == "admin" and password == "password":
-        flash("Login successful!")
-        return render_template("hello.html")
+        flash("Welcome, admin!")
+        return render_template("welcome.html")
     else:
         flash("Invalid credentials. Please try again.")
         return render_template("login.html")
