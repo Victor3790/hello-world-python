@@ -10,7 +10,7 @@ def home():
 @app.route("/hello")
 def hello():
     flash("This is a flash message!")
-    return render_template("hello.html")
+    return render_template("hello.html", subtitle="Welcome to the Hello Page")
 
 @app.route("/login")
 def login():
